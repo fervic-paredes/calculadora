@@ -2,6 +2,13 @@ body {
     background-color: aqua;
     height: 100vh;
     width: 100vw;
+    font-size:1em;
+}
+
+input {
+    width:17%;
+    border-radius:1px black ;
+    display:inline-block;
 }
 
 .container {
@@ -23,5 +30,41 @@ body {
 
 .board {
     height: 80%;
+    width: 100%;
+    display:flex;
+    justify-content:center;
+}
+
+.board__boton {
+    height: 90%;
     width: 90%;
 }
+
+.board__boton__1row {
+    height:8%;
+    font-size:50%;
+    display:flex;
+    justify-content:space-between;
+}
+
+.board__boton__2row {
+    height:16%;
+    margin: 3% 0%;
+    display:flex;
+    justify-content:space-between;
+}
+
+.board__boton__3row {
+    height:16%;
+    margin: 3% 0%;
+    display:flex;
+    justify-content:space-between;
+}
+
+.board__boton__4row {
+    height:16%;
+    margin: 3% 0%;
+    display:flex;
+    justify-content:space-between;
+}
+

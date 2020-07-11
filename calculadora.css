@@ -1,70 +1,92 @@
 body {
-    background-color: aqua;
-    height: 100vh;
-    width: 100vw;
+    height:100vh;
+    background-color: white;
     font-size:1em;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
-input {
-    width:17%;
-    border-radius:1px black ;
-    display:inline-block;
+.calculator {
+    height: 287.33px;
+    width: 297px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    border-radius:5px;
+    background-color: #8b8984;
 }
 
-.container {
-    height: 50%;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    background-color: burlywood;
-}
-
-.display {
+.calculator__display {
     height: 20%;
     width: 90%;
     margin: 5% 0%;
-    background-color: chocolate;
+    padding-right:2%;
+    border-radius:5px;
+    font-size:350%;
+    text-align:end;
+    background-color: #b2d9ff;
 }
 
-.board {
-    height: 80%;
+.calculator__keyboard {
+    height: 60%;
     width: 100%;
-    display:flex;
-    justify-content:center;
+    padding:5%;
+    background-color:#424242;
+    border-radius:0px 0px 5px 5px;
 }
 
-.board__boton {
-    height: 90%;
-    width: 90%;
-}
-
-.board__boton__1row {
-    height:8%;
-    font-size:50%;
-    display:flex;
-    justify-content:space-between;
-}
-
-.board__boton__2row {
+.keyboard__row {
     height:16%;
     margin: 3% 0%;
     display:flex;
-    justify-content:space-between;
+    justify-content:space-between; 
 }
 
-.board__boton__3row {
-    height:16%;
-    margin: 3% 0%;
-    display:flex;
-    justify-content:space-between;
+.keyboard__row--half-height {
+    height: 8%;
 }
 
-.board__boton__4row {
-    height:16%;
-    margin: 3% 0%;
-    display:flex;
-    justify-content:space-between;
+.button {
+width:18%;
+border-radius:5px;
+background-color: #d2c0c0;
+color:white;
+position:relative;
+border-width:0px;
+
 }
 
+.button:hover {
+    background-color:#b2a0a0;
+}
+
+.button--half-height {
+    font-size: 50%;
+
+}
+
+.button--red {
+    background-color: red;
+}
+
+.button--red:hover {
+    background-color:#9a0000;
+    
+}
+.button--arrow::before {
+    content: "\2192"; /* Insert content that looks like bullets */
+    padding-right: 8px;
+    position:absolute;
+    bottom: -30%;
+    right: 5%;
+    font-size:300%;
+  }
+
+.button--plus {
+    height:230%
+}
+
+.button--hidden {
+    visibility:hidden;
+}

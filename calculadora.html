@@ -6,47 +6,48 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="calculadora.css"/>
 </head>
-<body>
+<body onload="calculadora();">
     <div class="calculator">
-        <div class="calculator__display">57
+        <div class="calculator__display" id="calculator__display">
         </div>
         <div class="calculator__keyboard">
             <div class="keyboard__row keyboard__row--half-height">
-                <button class="button button--red button--half-height">off</button>
-                <button class="button button--half-height">%</button>
-                <button class="button button--half-height">&#8730</button>
-                <button class="button button--half-height button--arrow"></button>
-                <button class="button button--red button--half-height">ON/C</button>
+                <button class="button button--red button--half-height" id="off">off</button>
+                <button class="button button--half-height" id="%">%</button>
+                <button class="button button--half-height" id="squareroot">&#8730</button>
+                <button class="button button--half-height button--arrow" id="flecha"></button>
+                <button class="button button--red button--half-height" id="ON/C">ON/C</button>
             </div>
             <div class="keyboard__row">
-                <button class="button">7</button>
-                <button class="button">8</button>
-                <button class="button">9</button>
-                <button class="button">X</button>
-                <button class="button">/</button>
+                <button class="button" id="siete">7</button>
+                <button class="button" id="ocho">8</button>
+                <button class="button" id="nueve">9</button>
+                <button class="button" id="X">X</button>
+                <button class="button" id="/">/</button>
             </div>
             <div class="keyboard__row">
-                <button class="button">4</button>
-                <button class="button">5</button>
-                <button class="button">6</button>
-                <button class="button">-</button>
-                <button class="button">MRC</button>
+                <button class="button" id="cuatro">4</button>
+                <button class="button" id="cinco">5</button>
+                <button class="button" id="seis">6</button>
+                <button class="button" id="menos">-</button>
+                <button class="button" id="MRC">MRC</button>
             </div>
             <div class="keyboard__row">
-                <button class="button">1</button>
-                <button class="button">2</button>
-                <button class="button">3</button>
-                <button class="button button--red button--plus">+</button>
-                <button class="button">M-</button>
+                <button class="button" id="uno">1</button>
+                <button class="button" id="dos">2</button>
+                <button class="button" id="tres">3</button>
+                <button id="suma" class="button button--red button--plus">+</button>
+                <button class="button" id="M-">M-</button>
             </div>
             <div class="keyboard__row">
-                <button class="button">0</button>
-                <button class="button">.</button>
-                <button class="button">=</button>
+                <button class="button" id="cero">0</button>
+                <button class="button" id="punto">.</button>
+                <button class="button" id="igual">=</button>
                 <button class="button button--hidden"></button>
-                <button class="button">M+</button>
+                <button class="button" id="M+">M+</button>
             </div>
         </div>
     </div>
+    <script src="calculadora.js"></script>
 </body>
 </html>

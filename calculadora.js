@@ -42,10 +42,6 @@ function calculadora(){
         uno.onclick = function(e){
             if (state){
                 calculator__display.textContent = calculator__display.textContent + "1";
-                copy = "fervic paredes";
-                console.log("fervic paredes".substr(copy.indexOf("e"), copy.length));
-
-                
             }
         }
 
